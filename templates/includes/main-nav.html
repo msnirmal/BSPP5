@@ -1,0 +1,22 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}"><h5>HOME<span class="sr-only">(current)</span></h5></a>
+        </li>
+        <li class="nav-item dropdown nav-item active" >
+            <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h5>STORE<span class="sr-only">(current)</span></h5></a>
+            <div class="dropdown-menu border-0" aria-labelledby="products-link">
+                <a href="" class="dropdown-item">A</a>
+                <a href="" class="dropdown-item ">B</a>
+                <a href="" class="dropdown-item ">C</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All books</a>
+            </div>
+        </li> 
+        <li class="nav-item active">
+            <a class="nav-link" href="#"><h5>ABOUT<span class="sr-only">(current)</span></h5></a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#"><h5>CONTACT<span class="sr-only">(current)</span></h5></a>
+        </li>                   
+    </ul>
+</div>
