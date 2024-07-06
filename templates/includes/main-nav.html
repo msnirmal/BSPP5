@@ -4,19 +4,14 @@
             <a class="nav-link" href="{% url 'home' %}"><h5>HOME<span class="sr-only">(current)</span></h5></a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="{% url 'products_list' %}"><h5>PRODUCT<span class="sr-only">(current)</span></h5></a>
+            <a class="nav-link" href="{% url 'products' %}"><h5>PRODUCT<span class="sr-only">(current)</span></h5></a>
         </li>
         <li class="nav-item dropdown nav-item active" >
-            <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h5>CATEGORIES<span class="sr-only">(current)</span></h5></a>
+            <a class="nav-link" href="#" data-toggle="dropdown"><h5>CATEGORIES<span class="sr-only">(current)</span></h5></a>
             <ul class=" dropdown-menu" aria-labelledby="navbar-toggler">
-                <li><a class="dropdown-item" href="{% url 'products_list' %}">All</a></li>
-                
-                {% for c in categories %}
-                <li>
-                    <a class="dropdown-menu"  href="#">{{ c.name|title }}</a>
-                </li>
-                {% endfor %}
-                
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=django">Django</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}?category=flask">Flask</a></li>
+                <li><a class="dropdown-item" href="{% url 'products' %}">All</a></li>                      
             </ul>
         </li> 
         <li class="nav-item active">
