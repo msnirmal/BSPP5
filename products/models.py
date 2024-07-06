@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Category(models.Model):
-    name = models.CharField(max_length=255)
-    friendly_name = models.CharField(max_length=255, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=254, null=True, blank=True)
     
     class Meta:
         verbose_name_plural = 'Categories'
